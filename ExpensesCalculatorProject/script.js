@@ -1,0 +1,1 @@
+confirm('We use cookies to improve your experience. Is that ok?')

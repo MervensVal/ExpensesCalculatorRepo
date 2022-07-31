@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <title>Expenses Calculator</title>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">EasySave</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="CalculateExpenses.html">Calculate Expenses</a></li>
+                <li><a href="Calculator.html">Calculator</a></li>
+              </ul>
+            </div>
+          </nav>
+          <center>
+            <div class="mycontainer">
+              <h1 id="MainHeader" class="text-center">Calculator App</h1>
+            </br></br>
+                <div class="row">
+                    <input type="number" id="addNum1"/>
+                    +
+                    <input type="number" id="addNum2"/>
+                    =
+                   <span id="addresult" class="answer"></span>
+                    <button class="btn btn-primary" onclick="add()">submit</button>
+                </div>                
+            </br>
+            <div class="row">
+                <input type="number" id="subNum1"/>
+                -
+                <input type="number" id="subNum2"/>
+                =
+               <span id="subresult" class="answer"></span>
+                <button class="btn btn-primary" onclick="sub()">submit</button>
+            </div>        
+            </br>    
+            <div class="row">
+                <input type="number" id="mulNum1"/>
+                x
+                <input type="number" id="mulNum2"/>
+                =
+               <span id="mulresult" class="answer"></span>
+                <button class="btn btn-primary" onclick="mul()">submit</button>
+            </div>              
+            </br>
+            <div class="row">
+                <input type="number" id="divNum1"/>
+                /
+                <input type="number" id="divNum2"/>
+                =
+               <span id="divresult" class="answer"></span>
+                <button class="btn btn-primary" onclick="div()">submit</button>
+            </div>
+            <a href="Calculator.html" id="clearbtn" class="btn btn-warning">clear</a>
+        </div>            
+        </center>
+        <script type="text/javascript" src="calculator.js" defer></script>
+    </body>
+</html>

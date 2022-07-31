@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <title>Expenses Calculator</title>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">EasySave</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="CalculateExpenses.html">Calculate Expenses</a></li>
+                <li><a href="Calculator.html">Calculator</a></li>
+              </ul>
+            </div>
+          </nav>
+            <div class="mycontainer">
+              <h1 id="MainHeader" class="text-center">Calculate Your Expenses Here</h1>
+              <form onSubmit="calculateTotalExpenses();" id="myform">
+                <div class="form">
+                  <div class="form-group">
+                    <label for="goal">Select percentage goal to save after expenses</label>
+                    <br/>
+                    <input  type="radio" id="radio1" name="goal" value="10" class="form-check-input"/> 10%
+                    <input  type="radio" id="radio2" name="goal" value="20" style="margin-left: 20px" checked/> 20%
+                    <input  type="radio" id="radio2" name="goal" value="30" style="margin-left: 20px"/> 30%
+                    <input  type="radio" id="radio4" name="goal" value="40" style="margin-left: 20px"/> 40%
+                    <input  type="radio" id="radio5" name="goal" value="50" style="margin-left: 20px"/> 50%
+                    <input  type="radio" id="radio6" name="goal" value="60" style="margin-left: 20px"/> 60%
+                    <input  type="radio" id="radio7" name="goal" value="70" style="margin-left: 20px"/> 70%
+                    <input  type="radio" id="radio8" name="goal" value="80" style="margin-left: 20px"/> 80%
+                    <input  type="radio" id="radio9" name="goal"value="90" style="margin-left: 20px"/> 90%
+                    <input  type="radio" id="radio10" name="goal" value="100" style="margin-left: 20px"/> 100%
+                  </div>
+                  </br>
+                  <div class="form-group">
+                    <label style="color:#008B8B;">Net Monthly Income</label>
+                    <input type="number" class="form-control" value="0" id="monthlyincome" required>
+                  </div>              
+                  <div class="form-group">
+                    <label>Rent/Mortgage (Monthly)</label>
+                    <input type="number" class="form-control" value="0" id="rent-home" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Car (Monthly)</label>
+                    <input type="number" class="form-control" value="0" id="car" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Light Bill (Monthly)</label>
+                    <input type="number" class="form-control" value="0" id="light" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Water (Montly)</label>
+                    <input type="number" class="form-control" value="0" id="water" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Gas (Weekly)</label>
+                    <input type="number" class="form-control" value="0" id="gas" required>
+                  </div>
+                  <div class="form-group">
+                  <label>Groceries (Weekly)</label>
+                  <input type="number" class="form-control" value="0" id="groceries" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Insurance (Monthly)</label>
+                    <input type="number" class="form-control" value="0" id="insurance" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Internet and T.V (Monthly)</label>
+                    <input type="number" class="form-control" value="0" id="internet-tv" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Fun (Weekly)</label> <small>Eating out, movies, etc</small>
+                    <input type="number" class="form-control" value="0" id="fun" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" class="btn btn-success" id="CEsubmitbutton">
+                    <input type="reset" class="btn btn-warning" id="CErestbutton" >
+                  </div>
+                </br>
+                  <div class="form-group">
+                    <label for="" class="form-label">Results!</label>
+                    <input type="range" class="form-range" min="0" max="100" id="results-range" value="4">
+                    <p id="results-message"></p>
+                    <span id="results-percentage" class="mypercentage"></span>
+                    <span class="mypercentage">% of your monthly income</span>
+                  </div>
+                </div>
+              </form>
+            </br></br>
+          </div>            
+    </body>
+</html>
+<script type="text/javascript" src="calculateexpenses.js" defer></script>
